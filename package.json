@@ -1,0 +1,58 @@
+{
+  "version": "0.0.1",
+  "author": "Dmitry Fokin <dkoder.dvl@gmail.com>",
+  "description": "Metarhia library for building web application forms",
+  "license": "MIT",
+  "keywords": [
+    "interface",
+    "definition",
+    "metarhia",
+    "idl",
+    "dsl",
+    "schema",
+    "metadata",
+    "metaform",
+    "web",
+    "webform",
+    "metaenterprise"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dmitryfokin/metaform"
+  },
+  "bugs": {
+    "url": "https://github.com/dmitryfokin/metaform/issues",
+    "email": "dkoder.dvl@gmail.com"
+  },
+  "homepage": "https://metarhia.com",
+  "main": "metaform.js",
+  "types": "metaform.d.ts",
+  "files": [
+    "lib/",
+    "metaform.d.ts"
+  ],
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": "npm run lint && npm run types && metatests test/",
+    "types": "tsc -p tsconfig.json",
+    "lint": "eslint . && prettier -c \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\"",
+    "fmt": "prettier --write \"**/*.js\" \"**/*.json\" \"**/*.md\" \"**/*.ts\""
+  },
+  "engines": {
+    "node": "^12.9 || 14 || 16"
+  },
+  "dependencies": {
+    "swayer": "^1.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.5",
+    "eslint": "^7.32.0",
+    "eslint-config-metarhia": "^7.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.0.0",
+    "metatests": "^0.7.2",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  }
+}
